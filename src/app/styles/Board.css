@@ -1,0 +1,6 @@
+.addBoard{
+    background-color: forestgreen;
+    color: white;
+    display: flex;
+    align-items: center;
+}

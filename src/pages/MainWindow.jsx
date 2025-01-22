@@ -1,10 +1,18 @@
 
-import HeaderMain from "../HeaderMaium";
+
+import BaseMain from "../BaseMain";
+import HeaderMain from "../HeaderMain";
 
 export default function MainWindow(){
     return(
         <>
-          <HeaderMain/>  
+        <div>
+            <HeaderMain/>  
+        </div>
+        <div>
+            <BaseMain/>
+        </div>
+          
         </>
     );
 }
