@@ -1,15 +1,17 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import MainWindow from '../pages/MainWindow';
+import {Routes, Route} from 'react-router-dom';
+import HeaderMain from '../HeaderMain';
+import NotFoundPage from '../pages/NotFoundPage';
+import Board from '../Board';
 
 
 export default  function App() {
     return (
       <>
-        <BrowserRouter>
-          <Routes>
-            <Route path="*" element={<MainWindow/>} />
-          </Routes>
-        </BrowserRouter> 
+      <HeaderMain/>
+        <Routes>
+          <Route path='/*' element={<NotFoundPage/>}/>
+          <Route path='/boards' element={<Board/>}/>
+        </Routes>
       </>
     );
   }

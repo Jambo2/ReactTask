@@ -1,10 +1,14 @@
 import 'boxicons'
+import { Link } from 'react-router-dom'
+import './app/styles/HeaderMain.css'
 export default function HeaderMain(){
     return(
         <>
-            <a href='http://localhost:5174/'>
-                <box-icon name='smile'></box-icon> 
-            </a>
+            <div className='header__main'>
+                <Link  to='/boards' >
+                    <box-icon name='smile' size='4em'></box-icon> 
+                </Link>
+            </div>
         </>
     )
 }

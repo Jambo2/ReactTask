@@ -1,0 +1,10 @@
+.header__main{
+    margin: 0 auto;
+    width: 100px;
+    height: 40px;
+
+}
+.header__main .icon {
+    width: 150px; /* Установите желаемую ширину */
+    height: 250px; /* Установите желаемую высоту */
+}
