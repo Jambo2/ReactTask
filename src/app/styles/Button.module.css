@@ -1,0 +1,19 @@
+.button {
+    color: #E2E2d2;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 2px solid #C51F5D;
+    border-radius: 10px;
+    cursor: pointer;
+    &:active{
+        transform:translateY(4px)  ;
+    }
+}
+.primary{
+ background-color: #C51F5D;
+}
+.secondary {
+    background-color:#243447;
+}

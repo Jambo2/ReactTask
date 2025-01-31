@@ -1,10 +1,18 @@
+:root{
+    --bacground-color:#141d26;
+    --text-color:#E2E2d2;
+    --primary-color:#C51F5D;
+    --secondery-color:#243447;
+    }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu", serif;
+    text-decoration: none;
 }
 #root{
-    background-color: #333;
+    background-color: var(--bacground-color);
+    color: var(--text-color);
     min-height: 100vh;
 }

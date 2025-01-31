@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { useBoardsStore } from './store/store';
 import './app/styles/Board.css';
+import { Link } from 'react-router-dom';
+
+import Button from './Button';
 
 export default function Board() {
     const nameBoards = useBoardsStore(state => state.boardsList);
@@ -24,16 +27,19 @@ export default function Board() {
     };
 
     const boardsList = nameBoards.map((item, index) => (
-        <li key={index}>{item}</li>
+        <Link to={`/board/${item}`} key={index}>
+            <li className='my__board'>{item}</li>
+        </Link>
     ));
 
     return (
-        <>
+        <div className='main__element'>
             <div className='block__add'>
-                <button onClick={toggleAddBoard} className="addBoard">
+                
+                <Button handleClick={toggleAddBoard} className="addBoard">
                     <box-icon className='button__icon' name='add-to-queue' color='white'></box-icon>
                     Новая доска
-                </button>
+                </Button>
                 {
                     isBoardVisible &&
                     <div className='create__board'>
@@ -53,9 +59,9 @@ export default function Board() {
                     </div>
                 }
             </div>
-            <div>
+            <div className='block__board'>
                 <ul>{boardsList}</ul>
             </div>
-        </>
+        </div>
     );
 }
