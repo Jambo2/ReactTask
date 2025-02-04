@@ -1,0 +1,69 @@
+.myboard__element {
+    margin: 80px 20px;
+    max-width: 1440px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.addListButton{
+    margin-bottom: 20px;
+}
+.create__list {
+    width: 300px;
+    background-color: rgb(41, 36, 36);
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.create__list form {
+    padding: 20px;
+}
+
+
+.button__form {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.create__list form input {
+    height: 50px;
+    width: 100%;
+    margin-top: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 14px;
+}
+
+.create__list form input:focus {
+    outline: none;
+}
+
+
+
+.lists__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listItem {
+    color: #fff;
+    background-color: #C51F5D;
+    border: 1px solid #243447;
+    width: 240px;
+    height: 50px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 12px;
+}

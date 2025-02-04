@@ -52,8 +52,8 @@ export default function Board() {
                                 onChange={(event) => setNewBoardName(event.target.value)} 
                             />
                             <div className='button__form'>
-                                <button type='button' onClick={toggleAddBoard}>Отмена</button>
-                                <button type='submit'>Сохранить</button> 
+                                <Button type='button' onClick={toggleAddBoard}>Отмена</Button>
+                                <Button type='submit'>Сохранить</Button> 
                             </div>
                         </form>
                     </div>
