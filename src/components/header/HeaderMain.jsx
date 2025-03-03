@@ -1,6 +1,8 @@
 import 'boxicons'
 import { Link } from 'react-router-dom'
-import './app/styles/HeaderMain.css'
+
+import './HeaderMain.css'
+
 export default function HeaderMain(){
     return(
         <>

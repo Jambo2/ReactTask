@@ -1,8 +1,10 @@
 import {Routes, Route} from 'react-router-dom';
-import HeaderMain from '../HeaderMain';
+import HeaderMain from '../components/header/HeaderMain';
 import NotFoundPage from '../pages/NotFoundPage';
-import Board from '../Board';
-import MyBoard from '../MyBoard';
+import Board from '../pages/Board/Board';
+import MyBoard from '../pages/List/MyBoard';
+import Auth from '../pages/Auth/Auth';
+
 
 
 export default  function App() {
@@ -10,9 +12,10 @@ export default  function App() {
       <>
       <HeaderMain/>
         <Routes>
-          <Route path='/*' element={<NotFoundPage/>}/>
+          <Route path='/*' element={<Auth />}/>
           <Route path='/boards' element={<Board/>}/>
           <Route path="/board/:boardName" element={<MyBoard />} />
+          <Route path='*' element={<NotFoundPage/>}/>
         </Routes>
       </>
     );

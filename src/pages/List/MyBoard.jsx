@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
-import { useBoardsStore } from './store/store';
-import Button from './Button';
-import './app/styles/MyBoard.css'
+import { useBoardsStore } from '../../store/store';
+import Button from '../../shader/Button';
+import './MyBoard.css'
 
 export default function MyBoard() {
     const { boardName } = useParams(); 

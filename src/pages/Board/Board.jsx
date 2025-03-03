@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { useBoardsStore } from './store/store';
-import './app/styles/Board.css';
+import { useBoardsStore } from '../../store/store.js';
+import './Board.css';
 import { Link } from 'react-router-dom';
 
-import Button from './Button';
+import Button from '../../shader/Button.jsx';
 
 export default function Board() {
     const nameBoards = useBoardsStore(state => state.boardsList);
@@ -52,7 +52,7 @@ export default function Board() {
                                 onChange={(event) => setNewBoardName(event.target.value)} 
                             />
                             <div className='button__form'>
-                                <Button type='button' onClick={toggleAddBoard}>Отмена</Button>
+                                <Button className='primary' type='button' onClick={toggleAddBoard}>Отмена</Button>
                                 <Button type='submit'>Сохранить</Button> 
                             </div>
                         </form>

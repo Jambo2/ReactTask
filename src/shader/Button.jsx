@@ -1,4 +1,4 @@
-import styles from './app/styles/Button.module.css'
+import styles from './Button'
 
 export default function Button({color = "secondary", children, handleClick}) {
   return (
